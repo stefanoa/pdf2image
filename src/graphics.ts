@@ -14,7 +14,7 @@ export class Graphics {
 
   private height = 512;
 
-  private density = 72;
+  private density = 300;
 
   private savePath = "./";
 
@@ -37,6 +37,8 @@ export class Graphics {
       .density(this.density, this.density)
       .resize(this.width, this.height, "!")
       .quality(this.quality)
+      .alpha('off')
+      .alpha('remove')
       .compress(this.compression)
   }
 
